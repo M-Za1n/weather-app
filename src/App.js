@@ -58,7 +58,7 @@ function App() {
     <div style={{background:`url(https://source.unsplash.com/random/900×700/?${weather.weather[0].main})`,backgroundSize:'cover',backgroundPosition:'center'}}>
       <div className="weather-app flex max-md:flex-col text-shadow min-h-screen">
         <div className="flex flex-col w-2/3 max-md:w-full min-h-screen max-md:min-h-[250px] p-12 justify-between">
-            <h3 className="brand">GDS</h3>
+            <h3 className="capitalize">weather with me</h3>
             <div className='flex items-start gap-2'>
                 <h1 className="text-8xl max-lg:text-6xl max-sm:text-4xl">{weather.main.temp}&#176; C</h1>
                 <sup className='text-sm'>{weather.sys.country}</sup>
