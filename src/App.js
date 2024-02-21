@@ -27,7 +27,7 @@ function App() {
       units:'metric',
       appid: process.env.REACT_APP_APPID,
     }
-    let url='http://api.openweathermap.org/data/2.5/weather'
+    let url='https://api.openweathermap.org/data/2.5/weather'
     coordinate.lat &&  axios.get(url,{params}).then(response=>{
       console.log(response.data)
       setWeather(response.data)
@@ -41,7 +41,7 @@ function App() {
       appid:process.env.REACT_APP_APPID,
       units:'metric'
     }
-    let url='http://api.openweathermap.org/data/2.5/weather'
+    let url='https://api.openweathermap.org/data/2.5/weather'
     city && axios.get(url,{params}).then(res=> {setWeather(res.data);setCorrect(false)}).catch(error => {
       if (error.response && error.response.status === 404) {
         setCorrect(true)
